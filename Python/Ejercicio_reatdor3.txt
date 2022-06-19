@@ -1,0 +1,6 @@
+material = input ("Ingresa el material que va a transportar: " )
+peso_por_costal = input ("Ingresa el peso del material: " )
+
+Envio = (int (peso_por_costal) > int (1627)) and (int (peso_por_costal) < int (3254))
+
+print ("¿Se puede realizar el envio? " +str (Envio))

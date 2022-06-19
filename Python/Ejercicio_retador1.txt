@@ -1,0 +1,15 @@
+superficiesin=57365
+clima =["calido","subhumedo","seco","semiseco"]
+temperatura=25.45
+precipitacion=790.1
+poblacionmujeres=1532128
+poblacionhombres=1494815
+pobCulporcentaje=33.15
+pobMazporcentaje=16.57
+
+poblaciontotal= poblacionhombres+poblacionmujeres
+porcentajetotal= pobCulporcentaje+pobMazporcentaje
+
+print("La poblacion total es " +str (poblaciontotal))
+print("El porcentaje total en Culiacan y Mazatlan es " +str (porcentajetotal))
+print("La temperatura es" +str (temperatura) +"y el clima es " +str (clima))

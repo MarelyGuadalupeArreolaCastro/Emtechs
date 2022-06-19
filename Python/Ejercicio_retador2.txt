@@ -1,0 +1,16 @@
+municipio1 = input ("Ingresa el nombre del municipio: " )
+habitantes1 = input ("Ingresa el numero de habitantes: " )
+
+municipio2 = input ("Ingresa el nombre del municipio: " )
+habitantes2 = input ("Ingresa el numero de habitantes: " )
+
+municipio3 = input ("Ingresa el nombre del municipio: " )
+habitantes3 = input ("Ingresa el numero de habitantes: " )
+
+municipios = [municipio1, municipio2, municipio3]
+habitantes = [int (habitantes1) , int (habitantes2), int (habitantes3)]
+
+sumhabi = sum (habitantes)
+promediohabi = float (sumhabi) /3
+
+print ("La suma de los habitantes es : " +str (sumhabi) + " y su promedio es: " +str (promediohabi) + " De los municipios: " +str (municipios))

@@ -1,0 +1,39 @@
+venta_productos = [
+  [2,122],
+  [1,89],
+  [1,22],
+  [3,48],
+  [1,75],
+  [3,322],
+  [2,95],
+  [1,148],
+  [1,83],
+  [3,100]
+]
+costo_envio=1500
+venta=0
+total_cajas_vendidas=0
+venta_dia=0
+productos=[[1,"Maiz grano",285.55], [2,"Pepino",334.72], [3,"Tomate verde",129]]
+id_producto = int (input("Introduce el id del producto: " ))
+if (id_producto > 3):
+  print ("No existe ese producto")
+elif (id_producto >= 1):
+  id_producto = id_producto-1
+productos = productos[id_producto]
+productos=productos[1]
+precio = productos [2]
+print ("El producto es: " +str (precio))
+id_producto = id_producto+1
+for n in venta_productos:
+  if (int(n[0])==id_producto):
+    cajas_vendidas=int (n[1])
+    total_cajas_vendidas=total_cajas_vendidas+cajas_vendidas
+    if (cajas_vendidas <= 100):
+      venta_total_cajas = (cajas_vendidas * precio + costo_envio)
+    else:
+      venta_total_cajas = (cajas_vendidas * precio)
+
+  elif (total_cajas_vendidas > 1500):
+    print ("Aplica descuento del 20%")
+  else: 

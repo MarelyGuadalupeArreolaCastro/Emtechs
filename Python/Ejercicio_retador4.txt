@@ -1,0 +1,21 @@
+costo_envio = 1500
+total = 0
+productos = [[1, "Maíz grano", 285.55], [2, "Pepino", 334.72], [3, "Tomate verde", 129.00]]
+id_producto= int (input  ("Introduce el id del producto: " ))
+if (id_producto >= 4): 
+  print ("No existe ese producto")
+  
+elif (id_producto >= 1 and id_producto<=3):
+    id_producto= id_producto-1
+productos = productos [id_producto]  
+cajas_vender = int (input ("Introduzca la cantidad de cajas a vender: " ))
+producto = productos[1]
+precio = int (productos[2])
+if (cajas_vender <= 100):
+  total = (precio * cajas_vender + costo_envio)
+  print ("Se cobra el envio de" +str(costo_envio))
+  print ("El producto es " +producto)
+  print ("El precio es " +str (float (precio)))
+  print ("El total es " +str (float(total)))
+if (cajas_vender >100):
+  print ("La cantidad de cajas es más de la debida")
